@@ -38,11 +38,7 @@ int main(void){
     }
 
     qsort(final,count,sizeof(char *),compare);
-
-    for(int i=0 ; i<final_idx ; i++){
-      printf("%s \n",final[i]);
-    }
-
+    
     final_idx = 0;
     for(int i=1 ; i<count;i++){
         if(strcmp(final[i],final[i-1]) == 0){
